@@ -47,7 +47,7 @@ font-family: "iconfont" !important;
 font-size: 17px;
 }
 .microsoft:before {
-  content: "\e606";
+  content: "\e600";
 }
 .menu:before {
 content: "\e652";
