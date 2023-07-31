@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="js/header.js"></script>
+<script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<title>电台</title>
+</head>
+<body>
+<div class="content">
+<div id="aplayer"></div>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    theme:'#0e90D2',
+       audio: [{
+        name: '中国之声',
+        artist: 'Radio',
+        url: 'https://ngcdn001.cnr.cn/live/zgzs/index.m3u8',
+        cover: 'https://cnvod.cnr.cn/audio2017/ondemand/media/1100/20210425/1619317448858.jpg'
+    },
+    {
+        name: '经济之声',
+        artist: 'Radio',
+        url: 'https://ngcdn002.cnr.cn/live/jjzs/index.m3u8',
+        cover: 'https://cnvod.cnr.cn/audio2017/ondemand/img/1100/20230315/1678868245687.png'
+    },
+    {
+        name: '河北新闻广播',
+        artist: 'Radio',
+        url: 'http://satellitepull.cnr.cn/live/wxhebzhgb/playlist.m3u8',
+        cover: 'https://pic.qtfm.cn/2014/0616/20140616053545367.jpg!200'
+    },
+     {
+        name: '河北音乐之声',
+        artist: 'Radio',
+        url: 'http://satellitepull.cnr.cn/live/wxhebyygb/playlist.m3u8',
+        cover: 'https://pic.qtfm.cn/2015/1223/20151223210921313.jpg!200'
+    },
+    {
+        name: '怀集音乐',
+        artist: 'Radio',
+        url: 'https://lhttp.qingting.fm/live/4804/64k.mp3',
+        cover: 'https://pic.qtfm.cn/2020/1016/20201016121634.png'
+    },
+    {
+        name: '80后音悦台',
+        artist: 'Radio',
+        url: 'https://lhttp.qingting.fm/live/20207761/64k.mp3',
+        cover: 'http://pic.qtfm.cn/2017/1213/20171213044254.jpeg'
+    },
+{
+        name: '清晨音乐台',
+        artist: 'Radio',
+        url: 'https://lhttp.qingting.fm/live/4915/64k.mp3',
+        cover: 'http://pic.qtfm.cn/2022/0211/20220211102019.jpeg!200'
+    }]
+});
+</script>
+</div>
+</body>
+</html>
